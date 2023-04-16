@@ -3,7 +3,7 @@
  <img src="https://uploads-ssl.webflow.com/636c14a4a9cee130aa1923c7/6431161292ccec7f301162fb_OpenGraph3.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">Comnoco Template Library - Browse, Import, Use</h3>
 
 <div align="center">
 
