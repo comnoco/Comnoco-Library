@@ -1,0 +1,339 @@
+{
+  "logix": {
+    "id": "9da67d23-f8f7-4da7-8336-c7ea250a5034",
+    "user_defined_name": "Google-Sheets",
+    "settings": {
+      "exposed_paths": [
+        "c0b79da3-bc08-408c-9e39-38dacd40a298.url",
+        "c0b79da3-bc08-408c-9e39-38dacd40a298.queryStringParams",
+        "3f74bce7-3430-417b-bda6-48a37344cb74.oauth2ConfigId"
+      ],
+      "collapsed_items": [
+        "8f2cd9ef-bf05-4ac3-9a30-2d042eb3f5a8",
+        "ddfa3565-8c2d-439d-b113-05b0928f67d2"
+      ],
+      "collapsed_data_structure_paths": {
+        "30a56665-0846-4179-985d-79ec1a651a5c": {
+          "paths": [
+            "Response Body",
+            "Response Headers"
+          ]
+        }
+      },
+      "is_soft_errors": true
+    },
+    "public": [
+      {
+        "standard_function": {
+          "id": "4cc62487-1167-4741-aa6e-60b3ecf6b38d",
+          "user_defined_name": "Get Ranges",
+          "custom_input_parameters": [
+            {
+              "basic_unicode_text": {
+                "id": "0453d142-d68c-464c-8f1d-1e4f301a68e9",
+                "user_defined_name": "Sheet ID",
+                "user_comment": "Use ID `1nZ48GMCXZ2HuljEMbC68-AokXm_m-tybLgJL2lT5Bl8` for an example with read access to all",
+                "value": {
+                  "value": "1nZ48GMCXZ2HuljEMbC68-AokXm_m-tybLgJL2lT5Bl8"
+                }
+              }
+            },
+            {
+              "basic_unicode_text": {
+                "id": "6dc12430-b68c-44dc-bf7c-979d39b3e70e",
+                "user_defined_name": "ranges",
+                "user_comment": "e.g. `Sheet Name!1:50`",
+                "value": {
+                  "value": "To do!1:50"
+                }
+              }
+            },
+            {
+              "basic_unicode_text": {
+                "id": "6c52390b-b819-4fc7-83d8-fd749e67e860",
+                "user_defined_name": "Oauth2 ID",
+                "user_comment": "The ID of your Oauth2 credentials that you should set up in the secrets tab",
+                "value": {
+                  "value": "ccc23644-e4b7-493d-b188-d9b086805339"
+                }
+              }
+            }
+          ],
+          "custom_output_parameters": [
+            {
+              "data_structure": {
+                "id": "1e039d7b-f679-45aa-8952-b52bf1616b9a",
+                "user_defined_name": "Retrieved Data"
+              }
+            }
+          ],
+          "processes": [
+            {
+              "set_data_structure": {
+                "id": "ddfa3565-8c2d-439d-b113-05b0928f67d2",
+                "user_defined_name": "Get the Data",
+                "from": {
+                  "http_request": {
+                    "id": "c0b79da3-bc08-408c-9e39-38dacd40a298",
+                    "user_defined_name": "HTTP(S) / API Request",
+                    "auth": {
+                      "http_request_auth_oauth2": {
+                        "id": "3f74bce7-3430-417b-bda6-48a37344cb74",
+                        "user_defined_name": "OAuth2",
+                        "type": {
+                          "auth_code": {
+                            "id": "d889f8d1-9343-4993-9156-d4404d04db62",
+                            "user_defined_name": "Authorization Code"
+                          }
+                        },
+                        "oauth2_config_id": {
+                          "type_select_reference": {
+                            "reference": {
+                              "id": "7b07eb1c-9e57-4786-ae17-1c9c8dac76cf",
+                              "function_reference": {
+                                "basic_unicode_text": {
+                                  "id": "2b0c4023-6a1e-46f9-87cd-50057feb7303",
+                                  "user_defined_name": "Text 15",
+                                  "value": {
+                                    "value": "4cc62487-1167-4741-aa6e-60b3ecf6b38d"
+                                  }
+                                }
+                              },
+                              "function_parameter_reference": {
+                                "basic_unicode_text": {
+                                  "id": "12438fa5-26b1-426d-b490-fd15429d23bc",
+                                  "user_defined_name": "Text 15",
+                                  "value": {
+                                    "value": "6c52390b-b819-4fc7-83d8-fd749e67e860"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "url": {
+                      "unicode_text_join": {
+                        "id": "8f2cd9ef-bf05-4ac3-9a30-2d042eb3f5a8",
+                        "user_defined_name": "URL Join",
+                        "items": [
+                          {
+                            "basic_unicode_text": {
+                              "id": "7a3431b5-3894-4baa-964e-f0e4235aaf14",
+                              "user_defined_name": "Text 13",
+                              "value": {
+                                "value": "https://sheets.googleapis.com/v4/spreadsheets/"
+                              }
+                            }
+                          },
+                          {
+                            "type_select_reference": {
+                              "reference": {
+                                "id": "9c4a18e8-9651-4c6d-8765-436bf0a3e4df",
+                                "function_reference": {
+                                  "basic_unicode_text": {
+                                    "id": "a3c9a62c-68ab-45f2-a401-31b0abaf86d8",
+                                    "user_defined_name": "Text 14",
+                                    "value": {
+                                      "value": "4cc62487-1167-4741-aa6e-60b3ecf6b38d"
+                                    }
+                                  }
+                                },
+                                "function_parameter_reference": {
+                                  "basic_unicode_text": {
+                                    "id": "6e445732-1142-49cb-93f4-a313fa9060fc",
+                                    "user_defined_name": "Text 14",
+                                    "value": {
+                                      "value": "0453d142-d68c-464c-8f1d-1e4f301a68e9"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "basic_unicode_text": {
+                              "id": "38c76c97-3deb-4d3d-aacf-ba1c153fa455",
+                              "user_defined_name": "Text 12",
+                              "value": {
+                                "value": "/values:batchGet"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "query_string_params": {
+                      "type_select_data_structure": {
+                        "data_structure": {
+                          "id": "cbbf3a7e-76f5-43c0-b28b-a954e30e8c4f",
+                          "user_defined_name": "Options",
+                          "value": {
+                            "ds_object": {
+                              "id": "ba50a08e-197a-4478-bb85-781f5ed56836",
+                              "user_defined_name": "Option Object",
+                              "properties": [
+                                {
+                                  "type_select_any_data_type": {
+                                    "type_select_semi_secret": {
+                                      "type_select_unicode_text": {
+                                        "basic_unicode_text": {
+                                          "id": "de778501-a020-46b6-a90f-4c896d345bbf",
+                                          "user_defined_name": "dateTimeRenderOption",
+                                          "value": {
+                                            "value": "FORMATTED_STRING"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "type_select_any_data_type": {
+                                    "type_select_semi_secret": {
+                                      "type_select_unicode_text": {
+                                        "basic_unicode_text": {
+                                          "id": "9ac16cd6-599d-40f4-a01a-cb9ca4f746a2",
+                                          "user_defined_name": "majorDimension",
+                                          "user_comment": "Will return as rows (not columns)",
+                                          "value": {
+                                            "value": "ROWS"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "type_select_any_data_type": {
+                                    "type_select_semi_secret": {
+                                      "type_select_unicode_text": {
+                                        "basic_unicode_text": {
+                                          "id": "88cf39c0-8f8c-4500-8cd8-fe30fa467fdc",
+                                          "user_defined_name": "valueRenderOption",
+                                          "value": {
+                                            "value": "UNFORMATTED_VALUE"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "type_select_any_data_type": {
+                                    "type_select_marshalled_data_type": {
+                                      "type_select_raw_binary_data": {
+                                        "type_select_reference": {
+                                          "reference": {
+                                            "id": "eb679848-bd6f-4173-b14d-79649fefdaac",
+                                            "use_dynamic_key": {
+                                              "basic_boolean": {
+                                                "id": "006d5aae-6de5-4eca-809f-b03400963b0b",
+                                                "user_defined_name": "Boolean 1",
+                                                "value": {}
+                                              }
+                                            },
+                                            "function_reference": {
+                                              "basic_unicode_text": {
+                                                "id": "13f4269c-8a5a-417d-884d-246659f28be8",
+                                                "user_defined_name": "Text 11",
+                                                "value": {
+                                                  "value": "4cc62487-1167-4741-aa6e-60b3ecf6b38d"
+                                                }
+                                              }
+                                            },
+                                            "function_parameter_reference": {
+                                              "basic_unicode_text": {
+                                                "id": "6ff57e44-e9f6-4b5e-9507-78b50a2a7822",
+                                                "user_defined_name": "Text 11",
+                                                "value": {
+                                                  "value": "6dc12430-b68c-44dc-bf7c-979d39b3e70e"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "request_headers": {
+                      "type_select_data_structure": {
+                        "data_structure": {
+                          "id": "8e97e8e3-6d9c-4fca-8fa8-4e4092d7d6cf",
+                          "user_defined_name": "Data Structure 1",
+                          "value": {
+                            "ds_object": {
+                              "id": "796a83b9-5974-448f-b442-e7eb178eb781",
+                              "user_defined_name": "Object 1",
+                              "properties": [
+                                {
+                                  "type_select_any_data_type": {
+                                    "type_select_semi_secret": {
+                                      "type_select_unicode_text": {
+                                        "basic_unicode_text": {
+                                          "id": "93c9d06a-3622-4765-8ff7-601dba4f7c3a",
+                                          "user_defined_name": "Accept",
+                                          "value": {
+                                            "value": "application/json"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "curl_command": {
+                      "basic_unicode_text": {
+                        "id": "1be656d5-4516-4743-a5f8-86701ddd2a0a",
+                        "user_defined_name": "Text 8",
+                        "value": {
+                          "value": "curl \\\n  'https://sheets.googleapis.com/v4/spreadsheets/{SheetID}/values:batchGet?dateTimeRenderOption=FORMATTED_STRING&majorDimension=ROWS&ranges=Daily%20Schedule!1%3A6&valueRenderOption=UNFORMATTED_VALUE&key=[YOUR_API_KEY]' \\\n  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \\\n  --header 'Accept: application/json' \\\n  --compressed"
+                        }
+                      }
+                    }
+                  }
+                },
+                "to": {
+                  "reference": {
+                    "id": "30a56665-0846-4179-985d-79ec1a651a5c",
+                    "function_reference": {
+                      "basic_unicode_text": {
+                        "id": "b62370c4-59da-4a08-b907-b9bb675ab0e7",
+                        "user_defined_name": "Text 11",
+                        "value": {
+                          "value": "4cc62487-1167-4741-aa6e-60b3ecf6b38d"
+                        }
+                      }
+                    },
+                    "function_parameter_reference": {
+                      "basic_unicode_text": {
+                        "id": "17afa94f-a64a-4be5-9332-2c830c214e86",
+                        "user_defined_name": "Text 11",
+                        "value": {
+                          "value": "1e039d7b-f679-45aa-8952-b52bf1616b9a"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
