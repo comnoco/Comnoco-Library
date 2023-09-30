@@ -1,0 +1,66 @@
+{
+  "PDFData": {
+    "ceo": "Fernando Alonso",
+    "company_name": "Comnoco",
+    "web": "www.comnoco.com",
+    "email": "info@comnoco.com",
+    "phone": "01234 500 355",
+    "Street_Address": "8 Harry Rd, London",
+    "postcode": "IAM GR8",
+    "brochure_text": "Discover the Magic of River Cruising\n\nStep aboard and embark on a journey like no other; where the romance of old-world exploration fuses seamlessly with modern comforts. River cruising offers a unique vantage point, revealing the hidden gems and timeless landscapes of the world’s most enchanting regions. As you glide gently along the waterways, picturesque villages, historic landmarks, and verdant vineyards unfold before your eyes, each bend offering a new story to tell.\n\nOnboard, enjoy the intimate ambiance, unmatched service, and gourmet delights that define our cruises. Spacious cabins with panoramic views ensure you’re always in touch with the ever-changing scenery. With stops at charming ports of call, you'll have the opportunity to immerse yourself in local culture, history, and traditions. \n\nEvery day presents a new adventure, be it a guided tour of a medieval castle, a wine tasting at a sun-drenched vineyard, or a leisurely cycle along the riverbank. As night falls, the soothing lullaby of the river will serenade you to sleep. Join us, and let the river tell you its tales. Experience the magic of river cruising.\n\n**Discover the Magic of River Cruising**\n\nStep aboard and embark on a journey like no other; where the romance of old-world exploration fuses seamlessly with modern comforts. River cruising offers a unique vantage point, revealing the hidden gems and timeless landscapes of the world’s most enchanting regions. As you glide gently along the waterways, picturesque villages, historic landmarks, and verdant vineyards unfold before your eyes, each bend offering a new story to tell.\n\nOnboard, enjoy the intimate ambiance, unmatched service, and gourmet delights that define our cruises. Spacious cabins with panoramic views ensure you’re always in touch with the ever-changing scenery. With stops at charming ports of call, you'll have the opportunity to immerse yourself in local culture, history, and traditions. \n\nEvery day presents a new adventure, be it a guided tour of a medieval castle, a wine tasting at a sun-drenched vineyard, or a leisurely cycle along the riverbank. As night falls, the soothing lullaby of the river will serenade you to sleep. Join us, and let the river tell you its tales. Experience the magic of river cruising.\n\n**Discover the Magic of River Cruising**\n\nStep aboard and embark on a journey like no other; where the romance of old-world exploration fuses seamlessly with modern comforts. River cruising offers a unique vantage point, revealing the hidden gems and timeless landscapes of the world’s most enchanting regions. As you glide gently along the waterways, picturesque villages, historic landmarks, and verdant vineyards unfold before your eyes, each bend offering a new story to tell.\n\nOnboard, enjoy the intimate ambiance, unmatched service, and gourmet delights that define our cruises. Spacious cabins with panoramic views ensure you’re always in touch with the ever-changing scenery. With stops at charming ports of call, you'll have the opportunity to immerse yourself in local culture, history, and traditions. \n\nEvery day presents a new adventure, be it a guided tour of a medieval castle, a wine tasting at a sun-drenched vineyard, or a leisurely cycle along the riverbank. As night falls, the soothing lullaby of the river will serenade you to sleep. Join us, and let the river tell you its tales. Experience the magic of river cruising.",
+    "items": [
+      {
+        "description": "Menorca is the quietest of the islands, start here.",
+        "dest": "Menorca",
+        "number": "1",
+        "passenger": "nope",
+        "passengers": [
+          {
+            "passenger": "Rollo"
+          },
+          {
+            "passenger": "Linus"
+          },
+          {
+            "passenger": "Merlin"
+          }
+        ]
+      },
+      {
+        "description": "Menorca is busier, go here next.",
+        "dest": "Majorca",
+        "number": "2"
+      },
+      {
+        "description": "Party time.  Let's go!",
+        "dest": "Ibiza",
+        "number": "3"
+      }
+    ],
+    "link1": {
+      "_type": "link",
+      "target": "https://www.countryliving.com/uk/wildlife/dog-breeds/a35694759/schnauzer/",
+      "text": "We love dogs"
+    },
+    "mainlogo": {
+      "_type": "image",
+      "altText": "sample alternative text",
+      "format": "image/png",
+      "height": 88,
+      "url": "https://source.unsplash.com/random/88×300/?logo",
+      "width": 300
+    },
+    "Image1": {
+      "_type": "image",
+      "altText": "sample alternative text",
+      "format": "image/jpeg",
+      "height": 350,
+      "url": "https://source.unsplash.com/random/200×300/?holiday",
+      "width": 700
+    },
+    "section": {
+      "date": "27 Sep 2023 15:27:23",
+      "show": true
+    }
+  }
+}
