@@ -51,6 +51,8 @@ Run the function (Send an HTML email with an attachment) and then look at the `R
 
 There are three example Trigger files, each one maps to one of the functions in the Logix file. You will need to re-map the `Authenticate as User` block in each Trigger file. Delete the block, click the add-point and select a new `Authenticate as User` block. From the widget in the Properties panel you can set up a `Service User` for your workspace if you don't have one already then select the `Service User` to use for this Trigger. 
 
+You also need to re-map the functions to the `GET` method. Remove the currently selected function and then click the add-point. In the dialog select the API function matching the Trigger name.
+
 Make sure `Active when published` is switched on for each Trigger. Go to the Publish view and publish your workspace (save all changes).
 
 Go to the `Status` panel to view your published `Triggers`. Click on API Spec to see the mapped POST method and use the "Try it out" to test each Trigger.
@@ -67,24 +69,4 @@ Use the sample data below, adding your email address on a verified domain, when 
   "text": "This is a plain text email send from Comnoco using Resend!"
 }
 ```
-
-#### Sample data for HTML email with attachment
-
-```
-"Email details": {
-  "from": "your.email@verified.domain.com",
-  "to": ["email.to.send.to@example.com"],
-  "subject": "Hello from Comnoco",
-  "text": "This is a plain text email send from Comnoco using Resend!",
-  "html": "HTML content of your email",
-  "attachments": [
-    {
-      filename: 'example-attachment.pdf',
-      content: "base64 string of your attachment",
-    }
-  ]
-}
-  ```
-
-
 
